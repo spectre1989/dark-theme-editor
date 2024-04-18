@@ -6,7 +6,9 @@
         <div class="home">
             <div class="title">
                 {{ with $.Site.Params.header.logoImage }}
-                    <img class="logo" src="{{ $.Site.BaseURL }}{{ . }}"/>
+                    <div class="headerLogo">
+                        <img class="logo" src="{{ $.Site.BaseURL }}{{ . }}"/>
+                    </div>
                 {{ end }}
 
                 {{ with $.Site.Params.header.title }}

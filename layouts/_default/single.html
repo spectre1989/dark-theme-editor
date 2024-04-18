@@ -3,7 +3,9 @@
         {{ partial "module/sidebar_btn" . }}
 
         {{ with $.Site.Params.page.logoImage }}
-            <img class="logo" src="{{ $.Site.BaseURL }}{{ . }}"/>
+            <div class="headerLogo">
+                <a href="{{ $.Site.BaseURL }}"><img src="{{ $.Site.BaseURL }}{{ . }}"/></a>
+            </div>
         {{ end }}
         <div class="title">
             <h1 class="title-header">
